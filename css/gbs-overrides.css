@@ -91,6 +91,43 @@ section {
   color: #DCB960;
 }
 
+.info {
+  color: #555555;
+  margin: 3em 0;
+}
+
+.info ul {
+  list-style: none;
+}
+
+.info li {
+  text-align: left;
+}
+
+.info-title {
+  font-size: .8em;
+  color: #DCB960;
+  text-align: right;
+  line-height: 1.8em;
+}
+
+@media screen and (max-width: 576px) {
+  .info-title {
+    text-align: center;
+  }
+}
+
+.info-content {
+  text-align: left;
+  line-height: 1.8em;
+}
+
+@media screen and (max-width: 576px) {
+  .info-content {
+    text-align: center;
+  }
+}
+
 .photo {
   background: url("/img/angela.png");
   background-size: cover;
