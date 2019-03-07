@@ -1,0 +1,36 @@
+.item-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    counter-increment: step-counter;
+    flex: 50%;
+    padding-left: 1em;
+    padding-right: 3em;
+    margin-bottom: 2em;
+    position: relative;
+    color: $gray;
+
+    @media screen and (max-width: 576px) {
+      flex: 100%;
+      padding-right: 1em;
+    }
+
+    &::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: .6em;
+      color: $secondary-color;
+    }
+
+    .list-item-info {
+      display: block;
+      color: $primary-color;
+    }
+  }
+}

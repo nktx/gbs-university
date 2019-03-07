@@ -35,17 +35,3 @@
   color: $secondary-color;
   background-color: lighten($primary-color, 32%);
 }
-  
-// .session-row div:first-child {
-//   &::before {
-//     position: absolute;
-//     left: -7px;
-//     top: 0;
-//     content: '';
-//     height: 12px;
-//     width: 12px;
-//     border: $primary-color 2px solid;
-//     border-radius: 6px;
-//     background-color: #FFFFFF;
-//   }
-// }
