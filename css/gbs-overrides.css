@@ -37,6 +37,30 @@ section {
   }
 }
 
+@media screen and (min-width: 576px) {
+  #agenda .container-fluid {
+    padding-right: 0;
+  }
+}
+
+.agenda-date {
+  text-align: center;
+  border-bottom: #FFF 8px solid;
+  padding: 1em;
+  margin: 0 1em 1em;
+  color: #0D4249;
+}
+
+@media screen and (max-width: 576px) {
+  .agenda-date {
+    margin: 0 0 1em 0;
+  }
+}
+
+.agenda-date.active {
+  border-bottom: #0D4249 8px solid;
+}
+
 .session ul {
   list-style: none;
   margin-top: .6em;
