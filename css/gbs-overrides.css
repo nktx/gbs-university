@@ -1,0 +1,61 @@
+/*!
+ * Start Bootstrap - New Age v5.0.3 (https://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.2em;
+  color: #222222;
+}
+
+.section-sub-title {
+  font-size: 0.8em;
+  color: #777777;
+}
+
+.session ul {
+  list-style: none;
+  margin-top: .6em;
+  margin-bottom: .6em;
+  padding: 0;
+}
+
+.session ul li {
+  text-align: right;
+}
+
+.session-row {
+  margin-top: 10px;
+}
+
+.session-number {
+  font-size: .8em;
+  color: #e5cb8a;
+  text-transform: uppercase;
+}
+
+.session-time {
+  font-size: 1.2em;
+}
+
+.session-duration {
+  font-size: .4em;
+  color: #777777;
+}
+
+.session-topic {
+  height: 100%;
+  text-align: left;
+  padding: .8em;
+  color: #0D4249;
+  background-color: #f9f4e6;
+}

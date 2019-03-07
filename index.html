@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="./device-mockups/device-mockups.min.css">
@@ -26,14 +27,17 @@
   <!-- Custom styles for this template -->
   <link href="./css/new-age.css" rel="stylesheet">
 
+  <!-- Custom styles for GBS University -->
+  <link href="./css/gbs-overrides.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
 
 
-  <div id="loading" style="background: #222222; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 5000; text-align: center!important;">
+  <!-- <div id="loading" style="background: #222222; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 5000; text-align: center!important;">
     <div class="lds-roller" style="position: relative; left: 0px; margin-top: auto;"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-  </div>
+  </div> -->
 
   <!-- <ng-container *ngIf="showLoader">
 <div class="load-container">
@@ -383,16 +387,107 @@
   </div>
 </section>
 
-<section class="features" id="agenda">
-  <div class="container">
-    <div class="section-heading text-center">
-      <h2>Agenda</h2>
-      <p class="text-muted">Welcome to GBS Taiwan University.</p>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <img src="./img/agenda.png" class="img-fluid">
+<section id="agenda">
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <h2 class="section-title text-right">Agenda</h4>
+          <h4 class="section-sub-title text-right">議程</h4>
+        </div>
+      </div>
+      <div class="agenda">
+        <!-- <div class="row">
+            <div class="col-3"></div>
+          <div class="col-3">
+            <div class="agenda-date active">
+              4/11 Thu.
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="agenda-date">
+              4/12 Fri.
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="agenda-date">
+              4/13 Sat.
+            </div>
+          </div>
+        </div> -->
+        <div class="row session-row">
+          <div class="col-3">
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 1</li>
+                <li class="session-time">08:30-09:30</li>
+                <li class="session-duration">(60 mins)</li>
+              </ul>
+            </div>
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 2</li>
+                <li class="session-time">09:50-11:00</li>
+                <li class="session-duration">(70 mins)</li>
+              </ul>
+            </div>
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 3</li>
+                <li class="session-time">11:10-12:20</li>
+                <li class="session-duration">(70 mins)</li>
+              </ul>
+            </div>     
+          </div>
+          <div class="col-9">
+            <div class="session-topic">
+              Town Hall Meeting
+            </div>
+          </div>
+        </div>
+        <div class="row session-row">
+          <div class="col-3">
+            <div class="session">
+              <ul>
+                <li class="session-time">12:20-13:20</li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-9">
+            <div class="session-topic">
+              Lunch & Break
+            </div>
+          </div>
+        </div>
+        <div class="row session-row">
+          <div class="col-3">
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 4</li>
+                <li class="session-time">13:30-14:40</li>
+                <li class="session-duration">(70 mins)</li>
+              </ul>
+            </div>
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 5</li>
+                <li class="session-time">14:50-16:00</li>
+                <li class="session-duration">(70 mins)</li>
+              </ul>
+            </div>
+            <div class="session">
+              <ul>
+                <li class="session-number">Session 6</li>
+                <li class="session-time">16:10-17:20</li>
+                <li class="session-duration">(70 mins)</li>
+              </ul>
+            </div>     
+          </div>
+          <div class="col-9">
+            <div class="session-topic">
+              Industry/ Service Learning
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -409,7 +504,7 @@
     <div class="overlay"></div>
   </section>
   -->
-<section class="contact bg-primary">
+<section>
   <div class="container">
 
     <style>

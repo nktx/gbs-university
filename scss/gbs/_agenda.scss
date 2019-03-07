@@ -1,0 +1,51 @@
+.session ul {
+  list-style: none;
+  margin-top: .6em;
+  margin-bottom: .6em;
+  padding: 0;
+
+  li {
+    text-align: right;
+  }
+}
+
+.session-row {
+  margin-top: 10px;
+}
+
+.session-number {
+  font-size: .8em;
+  color: $primary-color-light;
+  text-transform: uppercase;
+}
+
+.session-time {
+  font-size: 1.2em;
+}
+
+.session-duration {
+  font-size: .4em;
+  color: $gray-light;
+}
+
+.session-topic {
+  height: 100%;
+  text-align: left;
+  padding: .8em;
+  color: $secondary-color;
+  background-color: lighten($primary-color, 32%);
+}
+  
+// .session-row div:first-child {
+//   &::before {
+//     position: absolute;
+//     left: -7px;
+//     top: 0;
+//     content: '';
+//     height: 12px;
+//     width: 12px;
+//     border: $primary-color 2px solid;
+//     border-radius: 6px;
+//     background-color: #FFFFFF;
+//   }
+// }

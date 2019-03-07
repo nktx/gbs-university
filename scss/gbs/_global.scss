@@ -1,0 +1,17 @@
+body {
+  font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.2em;
+  color: $gray-darker;
+}
+
+.section-sub-title {
+  font-size: 0.8em;
+  color: $gray-light;
+}
