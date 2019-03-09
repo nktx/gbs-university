@@ -88,12 +88,13 @@ section {
 
 .item-list li .list-item-info {
   display: block;
-  color: #DCB960;
+  color: #EDBE52;
 }
 
 .info {
   color: #555555;
   margin: 3em 0;
+  min-height: 30vh;
 }
 
 .info ul {
@@ -106,7 +107,7 @@ section {
 
 .info-title {
   font-size: .8em;
-  color: #DCB960;
+  color: #0D4249;
   text-align: right;
   line-height: 1.8em;
 }
@@ -120,6 +121,7 @@ section {
 .info-content {
   text-align: left;
   line-height: 1.8em;
+  font-size: .8em;
 }
 
 @media screen and (max-width: 576px) {
@@ -128,40 +130,75 @@ section {
   }
 }
 
-.photo {
+.photo-container {
   background: url("/img/angela.png");
-  background-size: cover;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100%;
 }
 
-#angelas_message {
+.event-image {
+  background: url("/img/book.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 576px) {
+  .event-image {
+    height: 80vh;
+  }
+}
+
+.event-info {
   padding: 0;
 }
 
-#angelas_message .photo-container {
+.event-info .section-title {
+  margin-top: 3rem;
+}
+
+.event-info .section-sub-title {
+  color: #333333;
+}
+
+.angelas-message {
+  padding: 0;
+}
+
+.angelas-message .message-image {
   padding-left: 0;
 }
 
-#angelas_message .section-title {
+.angelas-message .section-title {
   margin-top: 3rem;
   text-align: left;
 }
 
 @media screen and (max-width: 576px) {
-  #angelas_message .section-title {
+  .angelas-message .section-title {
     text-align: center;
   }
 }
 
-#angelas_message .section-sub-title {
+.angelas-message .section-sub-title {
   text-align: left;
 }
 
 @media screen and (max-width: 576px) {
-  #angelas_message .section-sub-title {
+  .angelas-message .section-sub-title {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .angelas-message {
+    padding-bottom: 50vh;
+    background: url("/img/angela.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
 
@@ -197,42 +234,41 @@ section {
   }
 }
 
-.agenda-date {
+.agenda {
+  width: 100%;
+}
+
+.agenda th {
   text-align: center;
   border-bottom: #FFF 8px solid;
   padding: 1em;
   margin: 0 1em 1em;
   color: #0D4249;
+  width: 25vw;
 }
 
-@media screen and (max-width: 576px) {
-  .agenda-date {
-    margin: 0 0 1em 0;
-  }
-}
-
-.agenda-date.active {
-  border-bottom: #0D4249 8px solid;
-}
-
-.session ul {
-  list-style: none;
-  margin-top: .6em;
-  margin-bottom: .6em;
-  padding: 0;
-}
-
-.session ul li {
+.agenda td.session {
+  width: 25%;
   text-align: right;
+  padding: 1em 15px 1em 0;
 }
 
-.session-row {
-  margin-top: 10px;
+.agenda tr {
+  border-top: #FFF 1px solid;
+}
+
+.agenda td:not(.session) {
+  padding: 1em;
+  border-right: #FFF 1px dotted;
+}
+
+.agenda td:not(.session).pb-5em {
+  padding-bottom: 5em;
 }
 
 .session-number {
   font-size: .8em;
-  color: #e5cb8a;
+  color: #f2cf80;
   text-transform: uppercase;
 }
 
@@ -240,15 +276,40 @@ section {
   font-size: 1.2em;
 }
 
-.session-duration {
-  font-size: .4em;
+.session-location {
+  font-size: .8em;
   color: #777777;
 }
 
-.session-topic {
-  height: 100%;
-  text-align: left;
-  padding: .8em;
+.session--break {
+  text-align: center;
+  color: #222222;
+}
+
+.session--mandatory {
+  color: #FFF;
+  background-color: #0D4249;
+}
+
+.session--mandatory .session-location {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.session--optional {
+  color: #092e33;
+  background-color: rgba(13, 66, 73, 0.1);
+}
+
+.session--optional .session-location {
   color: #0D4249;
-  background-color: #f9f4e6;
+}
+
+.session--gala {
+  color: #FFF;
+  background-color: #EDBE52;
+  padding-bottom: 10vh;
+}
+
+.session--gala .session-location {
+  color: rgba(255, 255, 255, 0.8);
 }

@@ -43,6 +43,7 @@
 .info {
   color: $gray;
   margin: 3em 0;
+  min-height: 30vh;
 
   ul {
     list-style: none;
@@ -50,13 +51,12 @@
 
   li {
     text-align: left;
-    
   }
 }
 
 .info-title {
   font-size: .8em;
-  color: $primary-color;
+  color: $secondary-color;
   text-align: right;
   line-height: 1.8em;
 
@@ -68,6 +68,8 @@
 .info-content {
   text-align: left;
   line-height: 1.8em;
+  font-size: .8em;
+  // color: $gray-dark;
 
   @media screen and (max-width: 576px) {
     text-align: center;

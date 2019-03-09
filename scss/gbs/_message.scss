@@ -1,15 +1,39 @@
-.photo {
+.photo-container {
   background: url('/img/angela.png');
-  background-size: cover;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100%;
 }
 
-#angelas_message {
+.event-image {
+  background: url('/img/book.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @media screen and (max-width: 576px) {
+    height: 80vh;
+  }
+}
+
+.event-info {
+  padding: 0;
+  // background-color: $primary-color;
+
+  .section-title {
+    margin-top: 3rem;
+  }
+
+  .section-sub-title {
+    color: $gray-dark;
+  }
+}
+
+.angelas-message {
   padding: 0;
 
-  .photo-container {
+  .message-image {
     padding-left: 0;
   }
 
@@ -28,6 +52,14 @@
     @media screen and (max-width: 576px) {
       text-align: center;
     }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 50vh;
+    background: url('/img/angela.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 }
 

@@ -4,35 +4,35 @@
   }
 }
 
-.agenda-date {
-  text-align: center;
-  border-bottom: #FFF 8px solid;
-  padding: 1em;
-  margin: 0 1em 1em;
-  color: $secondary-color;
+.agenda {
+  width: 100%;
 
-  @media screen and (max-width: 576px) {
-    margin: 0 0 1em 0;
+  th {
+    text-align: center;
+    border-bottom: #FFF 8px solid;
+    padding: 1em;
+    margin: 0 1em 1em;
+    color: $secondary-color;
+    width: 25vw;
   }
 
-  &.active {
-    border-bottom: $secondary-color 8px solid;
-  }
-}
-
-.session ul {
-  list-style: none;
-  margin-top: .6em;
-  margin-bottom: .6em;
-  padding: 0;
-
-  li {
+  td.session {
+    width: 25%;
     text-align: right;
+    padding: 1em 15px 1em 0;
   }
-}
+  tr {
+    border-top: #FFF 1px solid;
+  }
 
-.session-row {
-  margin-top: 10px;
+  td:not(.session) {
+    padding: 1em;
+    border-right: #FFF 1px dotted;
+
+    &.pb-5em {
+      padding-bottom: 5em;
+    }
+  }
 }
 
 .session-number {
@@ -45,15 +45,40 @@
   font-size: 1.2em;
 }
 
-.session-duration {
-  font-size: .4em;
+.session-location {
+  font-size: .8em;
   color: $gray-light;
 }
 
-.session-topic {
-  height: 100%;
-  text-align: left;
-  padding: .8em;
-  color: $secondary-color;
-  background-color: lighten($primary-color, 32%);
+.session--break {
+  text-align: center;
+  color: $gray-darker;
+}
+
+.session--mandatory {
+  color: #FFF;
+  background-color: $secondary-color;
+
+  .session-location {
+    color: rgba(256,256,256,.6);
+  }
+}
+
+.session--optional {
+  color: $secondary-color-dark;
+  background-color:  $secondary-color-lighter;
+
+  .session-location {
+    color: $secondary-color;
+  }
+}
+
+.session--gala {
+  color: #FFF;
+  background-color:  $primary-color;
+  padding-bottom: 10vh;
+
+  .session-location {
+    color: rgba(256,256,256,.8);
+  }
 }
