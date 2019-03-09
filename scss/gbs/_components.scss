@@ -1,3 +1,74 @@
+// angela's message
+
+.photo-container {
+  background: url('/img/angela.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100%;
+}
+
+.angelas-message {
+  padding: 0;
+
+  .message-image {
+    padding-left: 0;
+  }
+
+  .section-title {
+    margin-top: 3rem;
+    text-align: left;
+
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
+  }
+
+  .section-sub-title {
+    text-align: left;
+
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 50vh;
+    background: url('/img/angela.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+.message {
+  font-size: .8em;
+  color: $gray;
+  margin: 3em 0;
+  position: relative;
+  padding: 1em 3em;
+
+  &::before {
+    content: '“';
+    color: $gray-lighter;
+    font-size: 4em;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: '”';
+    color: $gray-lighter;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// rules, faq
+
 .item-list {
   margin: 0;
   padding: 0;
@@ -40,6 +111,31 @@
   }
 }
 
+// event-info
+
+.event-image {
+  background: url('/img/book.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  @media screen and (max-width: 576px) {
+    height: 80vh;
+  }
+}
+
+.event-info {
+  padding: 0;
+
+  .section-title {
+    margin-top: 3rem;
+  }
+
+  .section-sub-title {
+    color: $gray-dark;
+  }
+}
+
 .info {
   color: $gray;
   margin: 3em 0;
@@ -69,9 +165,25 @@
   text-align: left;
   line-height: 1.8em;
   font-size: .8em;
-  // color: $gray-dark;
-
   @media screen and (max-width: 576px) {
     text-align: center;
   }
+}
+
+// course-list
+
+.btn-course-list {
+  padding: 1em;
+  text-align: center;
+  color: #FFF;
+  background-color: $gray-darker;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.course-list {
+  min-height: 2em;
 }

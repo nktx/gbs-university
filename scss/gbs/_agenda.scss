@@ -43,6 +43,10 @@
 
 .session-time {
   font-size: 1.2em;
+
+  @media screen and (max-width: 576px) {
+    font-size: .8em;
+  }
 }
 
 .session-location {

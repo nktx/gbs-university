@@ -515,17 +515,12 @@
         </ol>
       </div>
     </div>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-6 col-sm-6" id="enroll">
-          <a href="#enroll" (click)='changePage(1)' class="btn btn-dark btn-lg btn-block js-scroll-trigger">
-            顯示所有課程</a><br />
-        </div>
-        <div class="col-md-6 col-sm-6" id="my_courses">
-          <a href="#my_courses" (click)='changePage(2)'
-            class="btn btn-dark btn-lg btn-block js-scroll-trigger">顯示已選課程</a>
-        </div>
-      </div>
+    <div class="row">
+      <div class="col-sm btn-course-list">顯示所有課程</div>
+      <div class="col-sm btn-course-list">顯示已選課程</div>
+    </div>
+    <div class="course-list bg-light">
+      <!-- 課程清單顯示於此 -->
     </div>
   </div>
 </section>
