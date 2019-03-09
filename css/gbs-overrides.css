@@ -38,20 +38,22 @@ section {
   }
 }
 
-.photo-container {
-  background: url("/img/angela.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 100%;
-}
-
 .angelas-message {
   padding: 0;
 }
 
 .angelas-message .message-image {
   padding-left: 0;
+  background: url("/img/angela.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media screen and (max-width: 576px) {
+  .angelas-message .message-image {
+    height: 100vw;
+  }
 }
 
 .angelas-message .section-title {
@@ -72,16 +74,6 @@ section {
 @media screen and (max-width: 576px) {
   .angelas-message .section-sub-title {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .angelas-message {
-    padding-bottom: 50vh;
-    background: url("/img/angela.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
   }
 }
 
@@ -288,6 +280,12 @@ section {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 576px) {
+  .session-number {
+    text-indent: -.8em;
+  }
+}
+
 .session-time {
   font-size: 1.2em;
 }
@@ -295,12 +293,19 @@ section {
 @media screen and (max-width: 576px) {
   .session-time {
     font-size: .8em;
+    margin-top: .4em;
   }
 }
 
 .session-location {
   font-size: .8em;
   color: #777777;
+}
+
+@media screen and (max-width: 576px) {
+  .session-location {
+    margin-top: .4em;
+  }
 }
 
 .session--break {

@@ -39,6 +39,10 @@
   font-size: .8em;
   color: $primary-color-light;
   text-transform: uppercase;
+
+  @media screen and (max-width: 576px) {
+    text-indent: -.8em;
+  }
 }
 
 .session-time {
@@ -46,12 +50,17 @@
 
   @media screen and (max-width: 576px) {
     font-size: .8em;
+    margin-top: .4em;
   }
 }
 
 .session-location {
   font-size: .8em;
   color: $gray-light;
+
+  @media screen and (max-width: 576px) {
+    margin-top: .4em;
+  }
 }
 
 .session--break {
