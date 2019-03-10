@@ -276,3 +276,24 @@ footer {
 .btn-course-secondary {
   color: $secondary-color;
 }
+
+// navbar
+
+#mainNav .navbar-brand,
+#mainNav .navbar-nav > li > a {
+  font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif !important;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 40px;
+  background-image: url('/img/shield.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+
+  @media screen and (max-width: 576px) {
+    font-size: 1em;
+  }
+}

@@ -11,6 +11,18 @@ section {
   color: $gray-darker;
   text-align: right;
 
+  &::before {
+    content: '';
+    display: inline-block;
+    transform: translateX(-.4em) translateY(-.4em);
+    height: 20px;
+    width: 20px;
+    background: url('/img/icon-bee.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   @media screen and (max-width: 576px) {
     text-align: center;
   }

@@ -19,6 +19,19 @@ section {
   text-align: right;
 }
 
+.section-title::before {
+  content: '';
+  display: inline-block;
+  -webkit-transform: translateX(-0.4em) translateY(-0.4em);
+  transform: translateX(-0.4em) translateY(-0.4em);
+  height: 20px;
+  width: 20px;
+  background: url("/img/icon-bee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 @media screen and (max-width: 576px) {
   .section-title {
     text-align: center;
@@ -329,9 +342,30 @@ footer {
   color: #2E5D80;
 }
 
+#mainNav .navbar-brand,
+#mainNav .navbar-nav > li > a {
+  font-family: 'IBM Plex Sans', 'Noto Sans', sans-serif !important;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 40px;
+  background-image: url("/img/shield.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+@media screen and (max-width: 576px) {
+  #mainNav .navbar-brand {
+    font-size: 1em;
+  }
+}
+
 .header {
   background: radial-gradient(#14464E, #022F37);
-  height: 90vh;
+  height: 96vh;
   position: relative;
   text-align: center;
   color: #FFF;
@@ -390,6 +424,7 @@ footer {
   .header .flag {
     width: 35vw;
     height: 35vw;
+    top: 48px;
   }
 }
 
@@ -420,6 +455,13 @@ footer {
   background-position: center;
   right: -10px;
   bottom: -30px;
+}
+
+@media screen and (max-width: 576px) {
+  .header .bg-bee {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .header .bg-logo {
