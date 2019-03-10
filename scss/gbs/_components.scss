@@ -164,12 +164,16 @@
 
 // course-list
 
-.btn-course-list {
+.btn-list {
   padding: 1em;
   text-align: center;
   color: #FFF;
-  background-color: $gray-darker;
   cursor: pointer;
+  transition: background-color .3s;
+}
+
+.btn-list--course {
+  background-color: $gray-darker;
 
   &:hover {
     background-color: $primary-color;
@@ -178,4 +182,53 @@
 
 .course-list {
   min-height: 2em;
+}
+
+// transportation-info
+
+.btn-list--transportation {
+  color: $gray-darker;
+  border-bottom: $gray-darker .1em solid;
+
+  &:hover,
+  &.active {
+    color: $primary-color-darker;
+    border-bottom: $primary-color-darker .1em solid;
+  }
+}
+
+
+.transportation-info-panel {
+  padding: 2em;
+  background-color: #FFF;
+
+  li {
+    list-style: none;
+    font-size: .8em;
+    color: $gray-darker;
+    line-height: 1.6em;
+    text-indent: -1em;
+    
+    &::before {
+      content: '-';
+      color: $primary-color;
+      display: inline-block;
+      margin-right: .2em;
+    }
+  }
+
+  .location-name {
+    color: $gray-darker;
+    font-size: 1.2em;
+  }
+
+  .location-address {
+    color: $gray-light;
+    font-size: .8em;
+  }
+
+  .transportation-method {
+    font-size: .8em;
+    margin-top: 1em;
+  }
 }

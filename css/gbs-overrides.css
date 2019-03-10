@@ -220,20 +220,70 @@ section {
   }
 }
 
-.btn-course-list {
+.btn-list {
   padding: 1em;
   text-align: center;
   color: #FFF;
-  background-color: #222222;
   cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
-.btn-course-list:hover {
+.btn-list--course {
+  background-color: #222222;
+}
+
+.btn-list--course:hover {
   background-color: #DABD69;
 }
 
 .course-list {
   min-height: 2em;
+}
+
+.btn-list--transportation {
+  color: #222222;
+  border-bottom: #222222 0.1em solid;
+}
+
+.btn-list--transportation:hover, .btn-list--transportation.active {
+  color: #b18f2c;
+  border-bottom: #b18f2c 0.1em solid;
+}
+
+.transportation-info-panel {
+  padding: 2em;
+  background-color: #FFF;
+}
+
+.transportation-info-panel li {
+  list-style: none;
+  font-size: .8em;
+  color: #222222;
+  line-height: 1.6em;
+  text-indent: -1em;
+}
+
+.transportation-info-panel li::before {
+  content: '-';
+  color: #DABD69;
+  display: inline-block;
+  margin-right: .2em;
+}
+
+.transportation-info-panel .location-name {
+  color: #222222;
+  font-size: 1.2em;
+}
+
+.transportation-info-panel .location-address {
+  color: #777777;
+  font-size: .8em;
+}
+
+.transportation-info-panel .transportation-method {
+  font-size: .8em;
+  margin-top: 1em;
 }
 
 .header {
