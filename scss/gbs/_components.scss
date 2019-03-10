@@ -254,3 +254,25 @@ footer {
     padding-top: 100px;
   }
 }
+
+// course list
+
+.course-list .table {
+  margin: 2em 0;
+  th {
+    border-top: none !important;
+  }
+}
+
+.btn-course {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-course-primary {
+  color: $primary-color; 
+}
+
+.btn-course-secondary {
+  color: $secondary-color;
+}

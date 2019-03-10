@@ -308,13 +308,40 @@ footer {
   }
 }
 
+.course-list .table {
+  margin: 2em 0;
+}
+
+.course-list .table th {
+  border-top: none !important;
+}
+
+.btn-course {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-course-primary {
+  color: #DABD69;
+}
+
+.btn-course-secondary {
+  color: #2E5D80;
+}
+
 .header {
   background: radial-gradient(#14464E, #022F37);
-  height: 100vh;
+  height: 90vh;
   position: relative;
   text-align: center;
   color: #FFF;
   padding-top: 50vh;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 100vh;
+  }
 }
 
 .header .event-content {
@@ -548,4 +575,8 @@ footer {
 
 .agenda-description li:nth-child(3)::before {
   background-color: #DABD69;
+}
+
+.session-ceremony {
+  border-bottom: #FFF 8em solid;
 }
