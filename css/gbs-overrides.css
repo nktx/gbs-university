@@ -24,8 +24,8 @@ section {
   display: inline-block;
   -webkit-transform: translateX(-0.4em) translateY(-0.4em);
   transform: translateX(-0.4em) translateY(-0.4em);
-  height: 20px;
-  width: 20px;
+  height: 1.2em;
+  width: 1.2em;
   background: url("/img/icon-bee.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,6 +35,8 @@ section {
 @media screen and (max-width: 576px) {
   .section-title {
     text-align: center;
+    -webkit-transform: translateX(-0.6em) translateY(-0.6em);
+    transform: translateX(-0.6em) translateY(-0.6em);
   }
 }
 
