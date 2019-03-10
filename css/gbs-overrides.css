@@ -489,7 +489,7 @@ section {
 
 .session--optional {
   color: #274f6d;
-  background-color: rgba(13, 66, 73, 0.1);
+  background-color: rgba(46, 93, 128, 0.1);
 }
 
 .session--optional .session-location {
@@ -529,7 +529,7 @@ section {
 }
 
 .agenda-description li:nth-child(2)::before {
-  background-color: rgba(13, 66, 73, 0.1);
+  background-color: rgba(46, 93, 128, 0.1);
 }
 
 .agenda-description li:nth-child(3)::before {
