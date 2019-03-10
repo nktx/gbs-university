@@ -240,3 +240,17 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+// footer
+
+footer {
+  background-image: url('/img/bg-logo.png');
+  background-size: 155px;
+  background-repeat: no-repeat;
+  background-position: 25px center;
+
+  @media screen and (max-width: 576px) {
+    background-position: center 30px;
+    padding-top: 100px;
+  }
+}

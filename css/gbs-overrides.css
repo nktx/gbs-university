@@ -294,6 +294,20 @@ section {
   background-position: left bottom;
 }
 
+footer {
+  background-image: url("/img/bg-logo.png");
+  background-size: 155px;
+  background-repeat: no-repeat;
+  background-position: 25px center;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    background-position: center 30px;
+    padding-top: 100px;
+  }
+}
+
 .header {
   background: radial-gradient(#14464E, #022F37);
   height: 100vh;
@@ -489,7 +503,7 @@ section {
 
 .session--optional {
   color: #274f6d;
-  background-color: rgba(46, 93, 128, 0.1);
+  background-color: RGBA(217, 236, 247, 0.8);
 }
 
 .session--optional .session-location {
@@ -529,7 +543,7 @@ section {
 }
 
 .agenda-description li:nth-child(2)::before {
-  background-color: rgba(46, 93, 128, 0.1);
+  background-color: RGBA(217, 236, 247, 0.8);
 }
 
 .agenda-description li:nth-child(3)::before {
