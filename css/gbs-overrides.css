@@ -35,8 +35,8 @@ section {
 @media screen and (max-width: 576px) {
   .section-title {
     text-align: center;
-    -webkit-transform: translateX(-0.6em) translateY(-0.6em);
-    transform: translateX(-0.6em) translateY(-0.6em);
+    -webkit-transform: translateX(-0.6em);
+    transform: translateX(-0.6em);
   }
 }
 
