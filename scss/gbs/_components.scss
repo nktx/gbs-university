@@ -232,3 +232,11 @@
     margin-top: 1em;
   }
 }
+
+.transportation-map {
+  min-height: 50vh;
+  background: url('/img/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
